@@ -11,35 +11,22 @@
     <div class="weather_report">
         <img src="{{pic}}" alt="icon of weather">
         <br>
-        <p class="weather_desc">today's high: {{high}}°F</p>
+        <p class="weather_desc"> Location: {{location}} </p>
         <br>
-        <p class="weather_desc">today's low: {{low}}°F</p>
+        <p class="weather_desc">Today's high: {{high}}°F</p>
         <br>
-        <p class="weather_desc">current temperature: {{current_temp}}°F</p>
+        <p class="weather_desc">Today's low: {{low}}°F</p>
         <br>
-        <p class="weather_desc">wind speed: {{wind_mph}} mph</p>
+        <p class="weather_desc">Current temperature: {{current_temp}}°F</p>
         <br>
-        <p class="weather_desc">local time: {{local_time}}</p>
+        <p class="weather_desc">Wind speed: {{wind_mph}} mph</p>
         <br>
-        <p class="weather_desc">description: {{text}} </p>
+        <p class="weather_desc">Local time: {{local_time}}</p>
+        <br>
+        <p class="weather_desc">Description: {{text}} </p>
     </div>
-    <div class="weather_reports">
-        <div class="weather_report_ex">
-            <img src="{{pic}}" alt="icon of weather">
-            <br>
-            <p class="weather_desc_ex">today's high: {{high}}°F</p>
-            <br>
-            <p class="weather_desc_ex">today's low: {{low}}°F</p>
-            <br>
-            <p class="weather_desc_ex">current temperature: {{current_temp}}°F</p>
-            <br>
-            <p class="weather_desc_ex">wind speed: {{wind_mph}} mph</p>
-            <br>
-            <p class="weather_desc_ex">local time: {{local_time}}</p>
-            <br>
-            <p class="weather_desc_ex">description: {{text}} </p>
-        </div>
-    </div>
+    <div class = "btn_div">
     <a href="{{url_for('home')}}"  class="return_btn">Return</a>
+    </div>
 </body>
 </html>

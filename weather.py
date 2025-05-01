@@ -31,7 +31,8 @@ def get_forecast(api_instance,location):
                 "region": "",
                 "local_time": "",
                 "text": "",
-                "picture": ""
+                "picture": "",
+                "location" : ""
                 }
     
     api_forecast = api_instance.forecast_weather(location,1)
@@ -46,6 +47,7 @@ def get_forecast(api_instance,location):
     forecast["local_time"] = api_forecast["location"]["localtime"]
     forecast["text"] = api_forecast["current"]["condition"]["text"]
     forecast["picture"] = api_forecast["current"]["condition"]["icon"]
+    forecast["location"] = f"{api_forecast["location"]["name"]}, {api_forecast["location"]["region"]}"
 
     return forecast
 
