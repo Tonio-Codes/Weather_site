@@ -1,0 +1,49 @@
+p {
+  margin-bottom:0px;
+  margin-top:0px;
+}
+div.weather_report {
+    border: 3px solid green;
+    display: inline-block;
+    width: 300px;
+    height: 225px;
+    text-align: center;
+}
+.return_btn { 
+  font: 11px Arial;
+  text-decoration: none;
+  background-color: green;
+  color: white;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  border-radius: 25px;
+}
+
+.weather_desc {
+  font-size: 12px;
+  font-family:Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 1px;
+}
+
+.weather_reports {
+  height: 200px;
+  border: 3px solid black; 
+}
+
+.weather_report_ex { 
+  display: inline-block;
+  width: 300px;
+  height: 150px;
+}
+
+.weather_desc_ex {
+  height: 1px;
+  font-size: small;
+  margin-left:5px;
+  
+}
