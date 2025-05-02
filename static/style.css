@@ -1,31 +1,35 @@
+body {
+  background-color: #2a9d8f;
+}
 p {
   margin-bottom:0px;
   margin-top:0px;
+  color: white
 }
 div.weather_report {
-    border: 3px solid green;
+    border: 3px solid #2a9d8f;
+    border-radius: 30px;
     display: inline-block;
     width: 300px;
     height: 250px;
     text-align: center;
+    margin-right: 5px;
+    box-shadow: 15px 15px 15px #264653
 }
 .return_btn { 
-  font: 11px Arial;
+  font: 14px "Roboto";
   text-decoration: none;
-  background-color: green;
+  background-color: #05668D;
   color: white;
-  padding: 2px 6px 2px 6px;
-  border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: 1px solid #CCCCCC;
+  padding: 6px 6px 6px 6px;
   border-radius: 25px;
   margin-top: 25px;
+  margin-right: 40px;
 }
 
 .weather_desc {
-  font-size: 12px;
-  font-family:Arial;
+  font-size: 16px;
+  font-family: "Roboto";
   margin-top: 0;
   margin-bottom: 0;
   height: 1px;
@@ -36,15 +40,40 @@ div.weather_report {
   border: 3px solid black; 
 }
 
-.weather_report_ex { 
-  display: inline-block;
+.search_box {
+  display: flex;
+  justify-content: center;
+  min-height: 500px;
+  align-items: center;
+}
+
+.weather_report_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+
+}
+
+.btn_div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+div.music_vibe_div {
+  border-radius: 30px;
+  display: flex;
   width: 300px;
-  height: 150px;
+  height: 250px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+  box-shadow: 15px 15px 20px #264653
 }
 
-.weather_desc_ex {
-  height: 1px;
-  font-size: small;
-  margin-left:5px;
+.music_rec{
+  font-family: "Roboto";
+  font-size: 16px;
+  
 }
-
