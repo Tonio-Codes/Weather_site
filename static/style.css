@@ -14,7 +14,8 @@ div.weather_report {
     height: 250px;
     text-align: center;
     margin-right: 5px;
-    box-shadow: 15px 15px 15px #264653
+    box-shadow: 15px 15px 20px #264653, -15px 
+    -15px 20px #264653;
 }
 .return_btn { 
   font: 14px "Roboto";
@@ -69,7 +70,7 @@ div.music_vibe_div {
   align-items: center;
   justify-content: center;
   margin-left: 40px;
-  box-shadow: 15px 15px 20px #264653
+  box-shadow: 15px 15px 20px #264653;
 }
 
 .music_rec{
