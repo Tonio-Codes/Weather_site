@@ -5,36 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha256-/ykJw/wDxMa0AQhHDYfuMEwVb4JHMx9h4jD4XvHqVzU=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='weather.css')}}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="weather_report_container">
-        <div class="weather_report">
-            <img src="{{pic}}" alt="icon of weather">
-            <br>
-            <p class="weather_desc"> Location: {{location}} </p>
-            <br>
-            <p class="weather_desc">Today's high: {{high}}°F</p>
-            <br>
-            <p class="weather_desc">Today's low: {{low}}°F</p>
-            <br>
-            <p class="weather_desc">Current temperature: {{current_temp}}°F</p>
-            <br>
-            <p class="weather_desc">Wind speed: {{wind_mph}} mph</p>
-            <br>
-            <p class="weather_desc">Local time: {{local_time}}</p>
-            <br>
-            <p class="weather_desc">Description: {{text}} </p>
+<body class="page">
+    <div class="header"></div>
+    <div class="parent_div">
+        <div class="div1">
+
         </div>
-        <div class="music_vibe_div">
-            <p class="music_rec">This is where the music rec will be</p>
+        <div class="div2">
+            <p class="current_tmp">{{current_temp}}°</p>
+            <img src="{{pic}}" class="weather_pic"/>
+            <p class="weather_paragraph">
+                high: {{high}}
+                <br/>
+                Low: {{low}}
+                <br/>
+                wind speed: {{wind_mph}} mph
+            </p>
         </div>
     </div>
-    <div class = "btn_div">
-    <a href="{{url_for('home')}}"  class="return_btn">Return</a>
+    <div class="footer">
+        <form method="POST">
+            <button type="submit" id="quote_btn">button</button>
+        </form>
     </div>
+    <script src="/static/index.js"></script>
 </body>
 </html>
