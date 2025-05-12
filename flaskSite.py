@@ -23,4 +23,4 @@ def show_weather(location):
         return render_template("weather_forecast.html",high=forecast["high"], low=forecast["low"],wind_mph=forecast["wind_mph"],current_temp=forecast["current_temp"],
                             local_time=forecast["local_time"], text=forecast["text"],pic=forecast["picture"],location=forecast["location"])
 
-app.run(host="0.0.0.0",port=80)
+app.run(host="0.0.0.0",port=80,debug=True)

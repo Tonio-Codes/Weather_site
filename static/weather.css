@@ -1,0 +1,98 @@
+.page {
+    background-color: #FBE9D0;
+}
+.parent_div {
+    display: flex;
+    position: fixed;
+    top: 25%;
+    bottom: 25%;
+    left: 25%;
+    right: 25%;
+    justify-content: center;
+    align-items: center;
+    background-color: #33697c;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.05), 5px 15px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+.div1 {
+    display:flex;
+    position: absolute;
+    left:0;
+    right:50%;
+    top: 0;
+    bottom: 0;
+    border-right: 4px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2 {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:50%;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    border-left: 3px black;
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    top:0;
+    bottom: 87%;
+    left: 0;
+    right: 0;
+    background-color: #874f41;
+}
+
+.music_img {
+    height: 150px;
+    width: 150px;
+}
+
+.footer {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 87%;
+    bottom: 0;
+    border: 3px black;
+    justify-content: flex-end;
+}
+
+.weather_pic {
+    position: absolute;
+    bottom: 180px;
+    left: 163px;
+}
+
+.current_tmp {
+    position: absolute;
+    font-family: "roboto";
+    font-size: large;
+    bottom:180px;
+    left: 110px;
+}
+
+.weather_paragraph {
+    position: absolute;
+    width: 200px;
+    left:56px;
+    text-align: center;
+    line-height: 1.8;
+    font-family: "roboto";
+    font-size: large;
+    bottom: 50px;
+}
+
+.local_info {
+     line-height: 1.8;
+    font-family: "roboto";
+    font-size: large;
+    text-align: center;
+}

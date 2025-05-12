@@ -57,6 +57,6 @@ if __name__ == "__main__":
     try:
         api_instance = create_api_instance()
         forecast = api_instance.forecast_weather(92683,1)
-        print(forecast)
+        #print(forecast)
     except ApiException as e:
         print("Exception when calling APIsApi->astronomy: %s\n" % e)
