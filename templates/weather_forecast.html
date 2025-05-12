@@ -11,7 +11,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body class="page">
-    <div class="header"></div>
+    <div class="header">
+        <p class="forecast_title">
+            Forecast
+        </p>
+    </div>
     <div class="parent_div">
         <div class="div1">
         <p class="local_info">
@@ -30,13 +34,13 @@
                 <br/>
                 wind speed: {{wind_mph}} mph
                 <br/>
-                {{text}}
+                description: {{text}}
             </p>
         </div>
     </div>
     <div class="footer">
         <form method="POST">
-            <button type="submit" id="quote_btn">button</button>
+            <button type="submit" id="quote_btn" class="return_btn">search</button>
         </form>
     </div>
     <script src="/static/index.js"></script>
