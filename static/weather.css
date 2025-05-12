@@ -47,6 +47,8 @@
     left: 0;
     right: 0;
     background-color: #874f41;
+    justify-content: center;
+    align-items: center;
 }
 
 .music_img {
@@ -67,7 +69,7 @@
 
 .weather_pic {
     position: absolute;
-    bottom: 180px;
+    bottom: 185px;
     left: 163px;
 }
 
@@ -95,4 +97,27 @@
     font-family: "roboto";
     font-size: large;
     text-align: center;
+}
+
+.return_btn {
+    position: absolute;
+    font-size: 15px;
+    font-family: "roboto";
+    padding : .5em 1em;
+    margin: 0.25em;
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    right: 20px;
+    top: 5px;
+    background-color: #874f41;
+}
+
+.return_btn:hover {
+    background: #33697c;
+}
+
+.forecast_title {
+    font-family: "roboto";
+    font-size: 50px;
 }
