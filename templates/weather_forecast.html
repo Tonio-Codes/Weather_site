@@ -14,17 +14,23 @@
     <div class="header"></div>
     <div class="parent_div">
         <div class="div1">
-
+        <p class="local_info">
+            {{location}}
+            <br/>
+            {{local_time}}
+        </p>
         </div>
         <div class="div2">
-            <p class="current_tmp">{{current_temp}}°</p>
+            <p class="current_tmp">{{current_temp}}°F</p>
             <img src="{{pic}}" class="weather_pic"/>
             <p class="weather_paragraph">
-                high: {{high}}
+                high: {{high}}°F
                 <br/>
-                Low: {{low}}
+                Low: {{low}}°F
                 <br/>
                 wind speed: {{wind_mph}} mph
+                <br/>
+                {{text}}
             </p>
         </div>
     </div>
